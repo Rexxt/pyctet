@@ -44,7 +44,7 @@ class Game(pycge.PyConsoleGame):
     def update(self, dt):
         self.dt = dt
         y = random.randrange(0,len(self.grid))
-        self.grid[y][random.randrange(0,len(self.grid[y]))] = random.randrange(0,4)
+        self.grid[y][random.randrange(0,len(self.grid[y]))] = random.randrange(0,len(self.blocktextures))
 
     def draw(self):
         pycge.printXY("HOLD", 10, 3)
